@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-import RightSgv from "@/assets/Testimonials/group2.svg";
+import RightSgv from "/src/assets/Testimonials/group2.svg";
 import Bento1 from "@/assets/bento/bento1.svg";
 import Bento2 from "@/assets/bento/bento2.svg";
 import Bento3 from "@/assets/bento/bento3.svg";
