@@ -1,113 +1,149 @@
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import Grid from "@/assets/grid.svg";
+import Vector_top from "@/assets/glow_hero_page.svg";
+import { TrustedLogos } from "@/assets/logos/ErportLogosStuff";
+import AboutGrowChief from "@/components/AboutGrowChief";
+import AboutCard from "@/components/AboutCard";
+import Benefits from "@/components/Benefits";
+import Process from "@/components/Process";
+import FAQ from "@/components/FAQ";
+import Pricing from "@/components/Pricing";
+import GitroomCard from "@/components/GitroomCard";
+import Logo from "@/assets/logo.svg";
+import Subbtn from "@/assets/wow/subbtn.svg";
+import One from "@/assets/wow/one.svg";
+import { FaSquareXTwitter, FaLinkedin, FaDiscord } from "react-icons/fa6";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+import NavbarSmall from "@/components/small/Navbar";
+import SideglowThingy from "@/small/side_thingvector1.svg";
+
+
+
+
+
+
+export default function Home () {
+
+	return (
+		<>
+			<main className="w-full  hidden flex-col sm:flex">
+				<Image
+					src={Vector_top}
+					alt="glow"
+					className="absolute inset-0 -translate-y-1/4"
+				/>
+				<Navbar />
+				<Hero />
+
+				<div className="w-full text-center mt-18 text-gray-500">TRUSTED BY</div>
+				<section className="w-full flex  justify-around flex-wrap ">
+					{TrustedLogos.map((item, i) => (
+						<Image src={item} alt="hello there" key={i} className="w-32 h-20" />
+					))}
+				</section>
+				<Image
+					src={Grid}
+					alt="grid"
+					className="absolute inset-0  select-none "
+				/>
+
+				<section className="h-screen  w-full mt-80">
+					<AboutGrowChief />
+					<div className="w-full h-screen ">
+						<AboutCard />
+					</div>
+
+					<section className="w-full h-screen">
+						<Benefits />
+					</section>
+
+					<section className="w-full  mt-[30rem] ">
+						<Process />
+					</section>
+					<section className="w-full h-screen ">
+						<FAQ />
+					</section>
+					<section className="w-full h-[50rem] mt-12 ">
+						<Pricing />
+					</section>
+					<section className="w-full h-[30rem] mt-12 ">
+						<GitroomCard />
+					</section>
+
+					<section className="w-full  mt-12 ">
+						<div className="w-full flex justify-around">
+							<div className="h-40 w-full px-10">
+								<div className="flex gap-2 text-3xl">
+									<Image src={Logo} alt="logo" />
+									GROWCHIEF
+								</div>
+								<div className="text-sm font-extralight w-72">
+									We do a whole week of launch around your prouct, including an
+									article, Reddit promotion, influencers posts, and so much more
+								</div>
+							</div>
+							<div className="h-40 w-full">
+								<div className="text-2xl">SUBSCRIBE TO OUR NEWSLETTER</div>
+								<div className="flex gap-2">
+									<div className="div border-[0.2px] border-gray-500 w-60 text-gray-400 p-3 rounded-full">
+										JOHNDOE@gmail.com
+									</div>
+									<Image src={Subbtn} alt="subbtn" />
+								</div>
+							</div>
+						</div>
+					</section>
+					<section className="w-full   h-[0.1rem] bg-gray-500"></section>
+					<section className="w-full mt-2 h-40 flex  justify-around">
+						<div className="w-2/5 flex  ">
+							<span className="flex flex-col gap-2 w-1/2 px-6">
+								<h1 className="text-extrabold text-xl">Page</h1>
+								<h1 className="text-sm  font-extralight text-gray-500">Home</h1>
+								<h1 className="text-sm  font-extralight text-gray-500">
+									Pricing
+								</h1>
+								<h1 className="text-sm  font-extralight text-gray-500">Blog</h1>
+							</span>
+							<span className="flex flex-col gap-2 w-1/2">
+								<h1 className="text-extrabold text-xl">Resources</h1>
+								<h1 className="text-sm  font-extralight text-gray-500">
+									Book a Call
+								</h1>
+								<h1 className="text-sm  font-extralight text-gray-500">
+									{" "}
+									Term and Use
+								</h1>
+								<h1 className="text-sm  font-extralight text-gray-500">
+									{" "}
+									Privacy Policy
+								</h1>
+							</span>
+						</div>
+						<div className="w-3/5 relative flex  items-center justify-end overflow-hidden">
+							<div className="rounded-full overflow-clip flex items-center justify-center w-80 h-96 translate-y-2	 absolute -translate-x-24 ">
+								<Image src={One} alt="one" className="object-none " />
+							</div>
+
+							<div className="w-96 h-full flex gap-6 justify-end px-6">
+								<FaSquareXTwitter className="text-purple-500   w-8 " />
+								<FaLinkedin className="text-purple-500   w-8" />
+
+								<FaDiscord className="text-purple-500   w-8" />
+							</div>
+						</div>
+					</section>
+				</section>
+			</main>
+
+			<main className="w-full  flex flex-col sm:hidden pt-6">small</main>
+		</>
+	);
 }
+
