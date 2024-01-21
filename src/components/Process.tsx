@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Testimonial1 from "@/assets/Integrate/InvertedGritgroup5.svg";
 import Testimonial2 from "@/assets/Integrate/InvertedGritgroup6.svg";
-import Line from "./src/assets/line.svg";
+import Line from "@/assets/Line.svg";
 import Image from "next/image";
 import One from "@/assets/Shorts/one.svg";
 import Two from "@/assets/Shorts/two.svg";
