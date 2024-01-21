@@ -18,6 +18,11 @@ import Card7 from "@/assets/Cards/Card7.svg";
 import Testimonial1 from "@/assets/Testimonials/group1.svg";
 import Testimonial2 from "@/assets/Testimonials/group2.svg";
 
+
+
+
+
+
 import Image from "next/image";
 interface AboutCardProps {}
 
