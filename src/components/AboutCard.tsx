@@ -13,7 +13,7 @@ import Card3 from "@/assets/Cards/Card3.svg";
 import Card4 from "@/assets/Cards/Card4.svg";
 
 import Card6 from "@/assets/Cards/Card6.svg";
-import Card7 from "./src/assets/Cards/Card7.svg";
+import Card7 from "@/assets/Cards/Card7.svg";
 
 import Testimonial1 from "@/assets/testimonials/group1.svg";
 import Testimonial2 from "@/assets/testimonials/group2.svg";
